@@ -1,79 +1,111 @@
 body {
-  background: #000000;
-  color: #ffffff;
+  background: #000;
+  color: #fff;
   font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
-  min-height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 
-  cursor: none; /* kiosk mode */
+  cursor: none;
 }
 
+/* MAIN PANEL (centred like a screen) */
 .container {
-  max-width: 1000px;
-  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
 }
 
-/* BIG TITLE */
+/* TITLE */
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #ff3b3b;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
 /* SUBTITLE */
 .subtitle {
-  font-size: 2rem;
-  opacity: 0.9;
+  font-size: 1.5rem;
+  opacity: 0.8;
 }
 
-/* MASSIVE COUNTER */
+/* HUGE COUNTER (MAIN FOCUS) */
 #counter {
-  font-size: 10rem;
-  color: #00ffcc;
-  margin: 40px 0;
+  font-size: 9rem;
+  font-weight: bold;
+  color: #00e6ff;
+
+  margin: 30px 0;
 
   text-shadow:
-    0 0 20px #00ffcc,
-    0 0 40px #00ffcc;
+    0 0 15px #00e6ff,
+    0 0 30px #00e6ff;
 }
 
-/* RATE TEXT */
+/* RATE */
 .rate {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 /* MESSAGE */
 #message {
-  font-size: 2.5rem;
-  margin-top: 30px;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
   color: #ffcc00;
 }
 
-/* BREAKDOWN */
+/* BREAKDOWN GRID */
 #crimeBreakdown {
   margin-top: 40px;
-  font-size: 2rem;
 }
 
+/* GRID LAYOUT (THIS IS THE KEY IMPROVEMENT) */
 #crimeBreakdown ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
   list-style: none;
   padding: 0;
 }
 
+/* CARDS */
 #crimeBreakdown li {
-  margin: 10px 0;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+
+  font-size: 1.5rem;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 /* BUTTON */
 button {
   margin-top: 40px;
-  padding: 20px 40px;
-  background: #ff3b3b;
-  color: white;
+  padding: 15px 30px;
   font-size: 1.5rem;
+
+  background: #ff3b3b;
   border: none;
+  color: white;
+
+  border-radius: 6px;
 }
-``
+
+/* MOBILE */
+@media (max-width: 768px) {
+  #counter {
+    font-size: 5rem;
+  }
+
+  #crimeBreakdown ul {
+    grid-template-columns: 1fr;
+  }
+}
