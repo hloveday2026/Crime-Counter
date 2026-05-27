@@ -1,24 +1,69 @@
-<li>
-  🚨 Violence<br>
-  <span id="violence">0</span>
-</li>
+<!DOCTYPE html>
+<html lang="en">
 
-<li>
-  🏠 Burglary<br>
-  <span id="burglary">0</span>
-</li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crime Clock</title>
 
-<li>
-  🚗 Vehicle Crime<br>
-  <span id="vehicle">0</span>
-</li>
+  <!-- ✅ CSS (WITH CACHE FIX) -->
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
 
-<li>
-  🛍️ Theft<br>
-  <span id="theft">0</span>
-</li>
+<body>
 
-<li>
-  ⚖️ Public Order<br>
-  <span id="publicOrder">0</span>
-</li>
+<div class="container">
+  <h1>🚨 Crime Never Stops</h1>
+  <p class="subtitle">Since you started watching...</p>
+
+  <div id="counter">0</div>
+
+  <p class="rate">
+    A crime is reported every <span id="rate">3.5</span> seconds
+  </p>
+
+  <p id="message">🟢 Monitoring...</p>
+
+  <!-- ✅ CRIME BREAKDOWN -->
+  <div id="crimeBreakdown">
+
+    <p><strong>Local Crime Breakdown</strong></p>
+
+    <ul>
+      <li>
+        🚨 Violence<br>
+        <span id="violence">0</span>
+      </li>
+
+      <li>
+        🏠 Burglary<br>
+        <span id="burglary">0</span>
+      </li>
+
+      <li>
+        🚗 Vehicle Crime<br>
+        <span id="vehicle">0</span>
+      </li>
+
+      <li>
+        🛍️ Theft<br>
+        <span id="theft">0</span>
+      </li>
+
+      <li>
+        ⚖️ Public Order<br>
+        <span id="publicOrder">0</span>
+      </li>
+    </ul>
+
+  </div>
+
+  <button id="resetBtn">Restart</button>
+
+</div>
+
+<!-- ✅ JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
