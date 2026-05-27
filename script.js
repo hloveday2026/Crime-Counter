@@ -1,4 +1,6 @@
 // === CONFIG ===
+alert("JS is working");
+
 const crimesPerYear = 9600000;
 
 // Convert to per second
