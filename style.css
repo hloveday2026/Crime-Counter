@@ -8,6 +8,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* ✅ HIDE CURSOR (KIOSK MODE) */
+  cursor: none;
 }
 
 .container {
@@ -17,53 +20,52 @@ body {
 
 /* VERY LARGE TITLE */
 h1 {
-  font-size: 5rem;       /* increased */
+  font-size: 5rem;
   color: #ff3b3b;
   margin-bottom: 20px;
 }
 
 /* LARGE SUBTITLE */
 .subtitle {
-  font-size: 2rem;       /* increased */
+  font-size: 2rem;
   opacity: 0.9;
 }
 
-/* MASSIVE COUNTER (MAIN FOCUS) */
+/* MASSIVE COUNTER */
 #counter {
-  font-size: 10rem;      /* VERY large */
+  font-size: 10rem;
   font-weight: bold;
   color: #00ffcc;
   margin: 40px 0;
 
-  /* stronger glow */
   text-shadow:
     0 0 20px #00ffcc,
     0 0 40px #00ffcc,
     0 0 80px #00ffcc;
 }
 
-/* LARGE RATE TEXT */
+/* RATE TEXT */
 .rate {
   font-size: 2rem;
   margin-top: 20px;
 }
 
-/* VERY CLEAR MESSAGE */
+/* ESCALATING MESSAGE */
 #message {
-  font-size: 2.5rem;     /* increased */
+  font-size: 2.5rem;
   margin-top: 30px;
   font-weight: bold;
   color: #ffcc00;
 }
 
-/* BIG BUTTON */
+/* BUTTON */
 button {
   margin-top: 50px;
   padding: 20px 40px;
   border: none;
   background: #ff3b3b;
   color: white;
-  font-size: 1.8rem;    /* increased */
+  font-size: 1.8rem;
   cursor: pointer;
   border-radius: 8px;
 }
@@ -72,3 +74,17 @@ button:hover {
   background: #ff0000;
 }
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #counter {
+    font-size: 5rem;
+  }
+
+  #message {
+    font-size: 1.8rem;
+  }
+}
