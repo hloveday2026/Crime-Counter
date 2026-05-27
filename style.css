@@ -10,7 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
 
-  cursor: default; /* ✅ cursor visible */
+  cursor: default;
 }
 
 /* ===== MAIN CONTAINER ===== */
@@ -60,21 +60,70 @@ h1 {
   color: #ffcc00;
 }
 
-/* ===== BREAKDOWN SECTION ===== */
+/* ===== BREAKDOWN ===== */
 #crimeBreakdown {
   margin-top: 30px;
 }
 
-/* TITLE FOR BREAKDOWN */
+/* TITLE */
 #crimeBreakdown p {
   font-size: 2rem;
   margin-bottom: 15px;
 }
 
-/* ===== GRID (REMOVES BULLETS + STRUCTURES LAYOUT) ===== */
+/* ✅ CRITICAL FIX: remove ALL list styling */
 #crimeBreakdown ul {
+  list-style-type: none !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
+}
 
-  list-style: none;   /* ✅ removes white dots */
+/* ✅ CRITICAL FIX: remove any leftover markers */
+#crimeBreakdown li {
+  list-style: none !important;
+
+  background: #111;
+  border-radius: 8px;
+  padding: 18px;
+
+  font-size: 1.4rem;
+
+  border: 1px solid #222;
+}
+
+/* NUMBERS */
+#crimeBreakdown span {
+  display: block;
+  margin-top: 8px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00e6ff;
+}
+
+/* BUTTON */
+button {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 1.3rem;
+
+  background: #ff3b3b;
+  border: none;
+  color: white;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  #counter {
+    font-size: 5rem;
+  }
+
+  #crimeBreakdown ul {
+
