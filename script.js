@@ -1,4 +1,3 @@
-alert("JS is working");
 
 const crimesPerYear = 9600000;
 const crimesPerSecond = crimesPerYear / (365 * 24 * 60 * 60);
