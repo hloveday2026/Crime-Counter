@@ -1,3 +1,4 @@
+/* ===== BASE LAYOUT ===== */
 body {
   background: #000;
   color: #fff;
@@ -12,100 +13,82 @@ body {
   cursor: none;
 }
 
-/* MAIN PANEL (centred like a screen) */
+/* MAIN CONTAINER (adds structure + centering) */
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
   text-align: center;
 }
 
-/* TITLE */
+/* ===== TITLE AREA ===== */
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;              /* slightly reduced for balance */
   color: #ff3b3b;
   margin-bottom: 10px;
-  letter-spacing: 2px;
 }
 
-/* SUBTITLE */
 .subtitle {
   font-size: 1.5rem;
-  opacity: 0.8;
-}
-
-/* HUGE COUNTER (MAIN FOCUS) */
-#counter {
-  font-size: 9rem;
-  font-weight: bold;
-  color: #00e6ff;
-
-  margin: 30px 0;
-
-  text-shadow:
-    0 0 15px #00e6ff,
-    0 0 30px #00e6ff;
-}
-
-/* RATE */
-.rate {
-  font-size: 1.5rem;
+  opacity: 0.9;
   margin-bottom: 20px;
 }
 
-/* MESSAGE */
+/* ===== COUNTER (MAIN FOCUS) ===== */
+#counter {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #00e6ff;
+  margin: 20px 0;
+
+  text-shadow:
+    0 0 10px #00e6ff,
+    0 0 30px #00e6ff;
+}
+
+/* ===== INFO TEXT ===== */
+.rate {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
 #message {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 30px;
   font-weight: bold;
   color: #ffcc00;
 }
 
-/* BREAKDOWN GRID */
+/* ===== BREAKDOWN SECTION ===== */
 #crimeBreakdown {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
-/* GRID LAYOUT (THIS IS THE KEY IMPROVEMENT) */
+/* TITLE LOOK */
+#crimeBreakdown p {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* GRID = FIXES YOUR LAYOUT ISSUE */
 #crimeBreakdown ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-
-  list-style: none;
+  gap: 15px;
   padding: 0;
 }
 
-/* CARDS */
+/* CARD DESIGN (KEY VISUAL FIX) */
 #crimeBreakdown li {
   background: #111;
-  padding: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
+  padding: 18px;
 
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border: 1px solid #222;
 }
 
-/* BUTTON */
-button {
-  margin-top: 40px;
-  padding: 15px 30px;
-  font-size: 1.5rem;
-
-  background: #ff3b3b;
-  border: none;
-  color: white;
-
-  border-radius: 6px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  #counter {
-    font-size: 5rem;
-  }
-
-  #crimeBreakdown ul {
-    grid-template-columns: 1fr;
-  }
-}
+/* MAKE NUMBERS STAND OUT */
+#crimeBreakdown span {
+  display: block;
+  margin-top: 8px;
