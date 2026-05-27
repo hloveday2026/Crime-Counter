@@ -1,4 +1,4 @@
-/* ===== BASE LAYOUT ===== */
+/* ===== BASE PAGE ===== */
 body {
   background: #000;
   color: #fff;
@@ -10,29 +10,31 @@ body {
   align-items: center;
   min-height: 100vh;
 
+  cursor: default; /* ✅ cursor visible */
 }
 
-/* MAIN CONTAINER (adds structure + centering) */
+/* ===== MAIN CONTAINER ===== */
 .container {
   width: 90%;
   max-width: 1100px;
   text-align: center;
 }
 
-/* ===== TITLE AREA ===== */
+/* ===== TITLE ===== */
 h1 {
-  font-size: 3.5rem;              /* slightly reduced for balance */
+  font-size: 3.5rem;
   color: #ff3b3b;
   margin-bottom: 10px;
 }
 
+/* ===== SUBTITLE ===== */
 .subtitle {
   font-size: 1.5rem;
   opacity: 0.9;
   margin-bottom: 20px;
 }
 
-/* ===== COUNTER (MAIN FOCUS) ===== */
+/* ===== COUNTER ===== */
 #counter {
   font-size: 8rem;
   font-weight: bold;
@@ -44,12 +46,13 @@ h1 {
     0 0 30px #00e6ff;
 }
 
-/* ===== INFO TEXT ===== */
+/* ===== RATE ===== */
 .rate {
   font-size: 1.4rem;
   margin-bottom: 15px;
 }
 
+/* ===== MESSAGE ===== */
 #message {
   font-size: 1.8rem;
   margin-bottom: 30px;
@@ -62,32 +65,16 @@ h1 {
   margin-top: 30px;
 }
 
-/* TITLE LOOK */
+/* TITLE FOR BREAKDOWN */
 #crimeBreakdown p {
   font-size: 2rem;
   margin-bottom: 15px;
 }
 
-/* GRID = FIXES YOUR LAYOUT ISSUE */
+/* ===== GRID (REMOVES BULLETS + STRUCTURES LAYOUT) ===== */
 #crimeBreakdown ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  padding: 0;
-}
 
-/* CARD DESIGN (KEY VISUAL FIX) */
-#crimeBreakdown li {
-  background: #111;
-  border-radius: 8px;
-  padding: 18px;
-
-  font-size: 1.4rem;
-
-  border: 1px solid #222;
-}
-
-/* MAKE NUMBERS STAND OUT */
-#crimeBreakdown span {
-  display: block;
-  margin-top: 8px;
+  list-style: none;   /* ✅ removes white dots */
