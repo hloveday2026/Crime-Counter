@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crime Clock</title>
 
-  <!-- ✅ ADD IT HERE -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,11 +23,27 @@
 
   <p id="message">Monitoring...</p>
 
+  <!-- CRIME BREAKDOWN -->
+  <div id="crimeBreakdown">
+
+    <p><strong>Local Crime Breakdown</strong></p>
+
+    <ul>
+      <li>🚨 Violence &amp; Sexual Offences: <span id="violence">0</span></li>
+      <li>🏠 Burglary: <span id="burglary">0</span></li>
+      <li>🚗 Vehicle Crime: <span id="vehicle">0</span></li>
+      <li>🛍️ Theft: <span id="theft">0</span></li>
+      <li>⚖️ Public Order: <span id="publicOrder">0</span></li>
+    </ul>
+
+  </div>
+
+  <!-- ✅ BUTTON BACK IN RIGHT PLACE -->
   <button id="resetBtn">Restart</button>
+
 </div>
 
 <script src="script.js"></script>
 
 </body>
 </html>
-``
