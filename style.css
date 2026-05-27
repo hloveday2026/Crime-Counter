@@ -4,64 +4,71 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
+  padding: 20px;
 }
 
-/* BIG TITLE */
+/* VERY LARGE TITLE */
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;       /* increased */
   color: #ff3b3b;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-/* SUBTITLE */
+/* LARGE SUBTITLE */
 .subtitle {
-  font-size: 1.5rem;
-  opacity: 0.8;
+  font-size: 2rem;       /* increased */
+  opacity: 0.9;
 }
 
-/* HUGE COUNTER */
+/* MASSIVE COUNTER (MAIN FOCUS) */
 #counter {
-  font-size: 8rem;
+  font-size: 10rem;      /* VERY large */
   font-weight: bold;
   color: #00ffcc;
-  margin: 30px 0;
+  margin: 40px 0;
 
-  /* glow effect */
-  text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+  /* stronger glow */
+  text-shadow:
+    0 0 20px #00ffcc,
+    0 0 40px #00ffcc,
+    0 0 80px #00ffcc;
 }
 
-/* RATE TEXT */
+/* LARGE RATE TEXT */
 .rate {
-  font-size: 1.5rem;
-}
-
-/* ESCALATING MESSAGE */
-#message {
   font-size: 2rem;
   margin-top: 20px;
+}
+
+/* VERY CLEAR MESSAGE */
+#message {
+  font-size: 2.5rem;     /* increased */
+  margin-top: 30px;
+  font-weight: bold;
   color: #ffcc00;
 }
 
-/* BUTTON */
+/* BIG BUTTON */
 button {
-  margin-top: 40px;
-  padding: 15px 30px;
+  margin-top: 50px;
+  padding: 20px 40px;
   border: none;
   background: #ff3b3b;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.8rem;    /* increased */
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 button:hover {
   background: #ff0000;
 }
+
